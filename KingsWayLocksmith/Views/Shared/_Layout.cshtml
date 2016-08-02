@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - KingsWay LockSmith</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+       
+</head>
+@*<body background="~/Images/Kingsway Locksmith logo.jpg" style="background-repeat: no-repeat">*@
+<body style="padding-top:0">
+    <div style="display:table; margin-right: auto; margin-left: auto; margin-top:0">        
+        <div style="display:table-cell">
+            <img src="~/Images/Kingsway Locksmith logo.jpg" width="600" height="250" />
+        </div>
+        <div style="display:table-cell">
+            <img src="~/Images/24-7.jpg" width="100" height="100" />
+        </div>
+        <div style="display:table-cell;">
+            <span>
+                Call Now 
+                <a>+1 604-499-7414</a>
+            </span>
+        </div>
+    </div>
+    <div class="navbar-collapse collapse" style="margin-left:100px">
+        <ul class="nav navbar-nav">            
+            <li style="font:bold 20px arial;">@Html.ActionLink("Home", "Index", "Home")</li>
+            @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+            <li style="font:bold 20px arial;">@Html.ActionLink("Contact", "Contact", "Home")</li>
+        </ul>
+    </div>
+
+    @*<img src="~/Images/Kingsway Locksmith logo.jpg" class="img-responsive"/>*@
+    
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">*@
+            @*<div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name","Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>*@
+            @*<div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>*@
+   
+    <div class="container body-content">
+        @RenderBody()
+        @*<div >
+            <img src="~/Images/ServiceImage.png" width="500px" height="400px" style="position:static; bottom:0; left:0" />
+        </div>*@       
+        @*<hr />*@
+        <footer style="bottom:0; position:fixed">
+            <p style="text-align:right">&copy; @DateTime.Now.Year - Kings Way LockSmith</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
