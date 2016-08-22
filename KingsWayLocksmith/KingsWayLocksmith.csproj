@@ -162,8 +162,16 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\24-7.jpg" />
+    <Content Include="Images\adams-rite.jpg" />
+    <Content Include="Images\door-closer.png" />
     <Content Include="Images\Kingsway Locksmith logo.jpg" />
+    <Content Include="Images\LeftSideofthe van.jpg" />
+    <Content Include="Images\leverset.jpg" />
+    <Content Include="Images\sch.png" />
+    <Content Include="Images\schpower.jpg" />
     <Content Include="Images\ServiceImage.png" />
+    <Content Include="Images\unican-digital-lock %283%29.jpg" />
+    <Content Include="Images\unican-digital-lock.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -171,6 +179,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
+    <None Include="Properties\PublishProfiles\LockSmith.pubxml" />
+    <None Include="Properties\PublishProfiles\TitanicSurvivalPredictionAPI.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -197,6 +208,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\FirstPage.cshtml" />
+    <Content Include="Views\Shared\Services.cshtml" />
+    <Content Include="Views\Shared\Testemonial.cshtml" />
+    <Content Include="Views\Shared\Residential.cshtml" />
+    <Content Include="Views\Shared\Commercial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

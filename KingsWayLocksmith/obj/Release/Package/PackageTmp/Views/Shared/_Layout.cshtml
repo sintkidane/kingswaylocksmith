@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - KingsWay LockSmith</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+       
+</head>
+@*<body background="~/Images/Kingsway Locksmith logo.jpg" style="background-repeat: no-repeat">*@
+<body style="padding-top:0">
+    <div style="display:table; margin-right: auto; margin-left: auto; margin-top:0">        
+        <div style="display:table-cell">
+            <img src="~/Images/Kingsway Locksmith logo.jpg" class="img-responsive" alt="Cinque Terre" width="600" height="250" />
+        </div>
+        <div style="display:table-cell; align-content:center">            
+            <div style="display:table-cell">
+                <img src="~/Images/24-7.jpg" class="img-responsive" alt="Cinque Terre" width="100" height="100" />
+            </div>
+            <div style="display:table-cell;">
+                <span style="font:bold 18px arial; color:blue">Licensed And Insured</span>
+                </br>
+                <span>
+                    Call Now
+                    <a>+1 604-499-7414</a>
+                </span>
+            </div>
+        </div>
+        </br>
+    </div> 
+    <div class="container body-content">
+        @RenderBody()
+        <div class="panel-footer">
+            <p style="text-align:right">&copy; @DateTime.Now.Year - KingsWay LockSmith</p>
+        </div>
+       @*<footer style="bottom:0; position:fixed">
+            <p style="text-align:right">&copy; @DateTime.Now.Year - Kings Way LockSmith</p>
+        </footer>*@
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)    
+</body>
+</html>

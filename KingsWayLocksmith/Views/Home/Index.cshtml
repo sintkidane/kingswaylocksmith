@@ -1,37 +1,53 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div id="tabs" style="text-align:justify">
+    <ul class="nav nav-pills nav-justified">
 
-<div class="row">
-    <div class="col-md-4">
-        <p>
-            </br>
-        </p>
-       <p style="align-items:stretch">
-            Kingsway Locksmith happens to be the very first notion that arrives towards the mind once you are within necessity of an Emergency Locksmith Service.
-            And we simply can't refuse the truth that 24 hour support is without a doubt a really good feature that's presented to us.
-            In this short article we'll take a look at certain details with regards to precisely what you can anticipate coming from an Emergency Locksmith 
-            and if perhaps it is a good thought to get in touch with one whenever in an emergency.
-        </p>        
+        <li class="active">
+            <a href="#Home" data-toggle="tab">HOME</a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                SERVICES<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#Commercial" data-toggle="tab">Commercial</a></li>
+                <li><a href="#Residential" data-toggle="tab">Residential</a></li>                
+            </ul>
+        </li>       
+        @*<li>
+            <a href="#Testemonial" data-toggle="tab">TESTEMONIAL</a>
+        </li>*@
+        <li>
+            <a href="#About" data-toggle="tab">ABOUT</a>
+        </li>
+        <li>
+            <a href="#Contact" data-toggle="tab">CONTACT</a>
+        </li>       
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="Home">
+            @Html.Partial("FirstPage")
+        </div>
+        <div class="tab-pane" id="Commercial">
+            @Html.Partial("Commercial")
+        </div>
+        <div class="tab-pane" id="Residential">
+            @Html.Partial("Residential")
+        </div>
+        <div class="tab-pane" id="Services">
+            @Html.Partial("Services")
+        </div>
+        @*<div class="tab-pane" id="Testemonial">
+            @Html.Partial("Testemonial")
+        </div>*@
+        <div class="tab-pane" id="About">
+            @Html.Partial("About")
+        </div>
+        <div class="tab-pane" id="Contact">
+            @Html.Partial("Contact")
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Services</h2>
-        <ul>
-            <li>Reky locks</li>
-            <li>Master Keyeng</li>
-            <li>Repair/Repalce/install locks</li>
-            <li>Repair/Repalce door closer</li>
-            <li>Install door hardware</li>
-            <li>Install Secyity plates</li>
-        </ul> 
-        
-    </div>
-    <div class="col-md-4">
-        <h2>Replace/Install</h2>
-        <ul>
-            <li>Mailbox</li>
-            <li>Padlocks</li>
-            <li>Cabinet locks</li>
-        </ul>       
-    </div>
-</div>
+</div>  
